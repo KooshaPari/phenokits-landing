@@ -1,5 +1,9 @@
 # phenokits-landing
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![CI](https://img.shields.io/github/actions/workflow/status/KooshaPari/phenokits-landing/ci.yml?branch=main)](https://github.com/KooshaPari/phenokits-landing/actions)
+[![TypeScript](https://img.shields.io/badge/typescript-5%2B-3178C6?logo=typescript)](https://www.typescriptlang.org/)
+
 Production landing page at `phenokits.kooshapari.com` for [KooshaPari/PhenoKits](https://github.com/KooshaPari/PhenoKits), a Rust-based project management and workflow orchestration platform. Part of the Phenotype org-pages architecture (Tier 2; Tier 1 is `projects.kooshapari.com`).
 
 ## Purpose
