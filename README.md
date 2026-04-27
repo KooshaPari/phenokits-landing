@@ -14,7 +14,7 @@ PhenoKits is a Tier-2 Phenotype brand surface. It gives the kit catalog a stable
 
 - **Frontend:** Astro 6 static site
 - **Styling:** Tailwind CSS 4 with Phenotype CSS tokens
-- **Deployment:** Vercel
+- **Deployment:** Vercel plus a GitHub Pages mirror
 - **Domain:** `phenokits.kooshapari.com` via Cloudflare CNAME
 - **Data sources:** GitHub API, committed QA snapshots, PhenoObservability UI
 
@@ -43,6 +43,8 @@ bunx astro check
 bun run build
 bun run preview
 ```
+
+For the GitHub Pages mirror, build with `GITHUB_PAGES=true bun run build`.
 
 ## Path Microfrontends
 
