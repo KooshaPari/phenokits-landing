@@ -28,4 +28,4 @@ tasks:
   clean:
     desc: Remove ignored generated build artifacts
     cmds:
-      - git clean -fdX dist .astro
+      - git clean -fdX -- dist .astro
