@@ -16,9 +16,9 @@ tasks:
 
   test:
     desc: Run the available verification gates
-    deps:
-      - lint
-      - build
+    cmds:
+      - task: lint
+      - task: build
 
   lint:
     desc: Run Astro type and content checks
