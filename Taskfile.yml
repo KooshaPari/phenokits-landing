@@ -7,7 +7,7 @@ tasks:
   default:
     desc: Run the default verification task
     deps:
-      - build
+      - test
 
   build:
     desc: Build the Astro/TypeScript landing site
@@ -15,9 +15,10 @@ tasks:
       - "{{.PACKAGE_MANAGER}} run build"
 
   test:
-    desc: Run the available test gate
-    cmds:
-      - task: build
+    desc: Run the available verification gates
+    deps:
+      - lint
+      - build
 
   lint:
     desc: Run Astro type and content checks
