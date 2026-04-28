@@ -1,8 +1,11 @@
 version: "3"
 
-default: build
-
 tasks:
+  default:
+    desc: Build the Astro site
+    deps:
+      - build
+
   build:
     desc: Build the Astro site
     cmds:
