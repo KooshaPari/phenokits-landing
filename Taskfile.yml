@@ -1,27 +1,30 @@
 version: "3"
 
+vars:
+  PACKAGE_MANAGER: bun
+
 tasks:
   default:
-    desc: Build the Astro site
+    desc: Run the default verification task
     deps:
       - build
 
   build:
-    desc: Build the Astro site
+    desc: Build the Astro/TypeScript landing site
     cmds:
-      - bun run build
+      - "{{.PACKAGE_MANAGER}} run build"
 
   test:
-    desc: Run production build smoke test
+    desc: Run the available test gate
     cmds:
-      - bun run build
+      - task: build
 
   lint:
     desc: Run Astro type and content checks
     cmds:
-      - bunx astro check
+      - "{{.PACKAGE_MANAGER}}x astro check"
 
   clean:
-    desc: Remove generated build artifacts
+    desc: Remove ignored generated build artifacts
     cmds:
-      - rm -rf dist .astro
+      - git clean -fdX dist .astro
