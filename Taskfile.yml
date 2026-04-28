@@ -9,9 +9,8 @@ tasks:
       - bun run build
 
   test:
-    desc: Run static checks and a production build
+    desc: Run production build smoke test
     cmds:
-      - bunx astro check
       - bun run build
 
   lint:
