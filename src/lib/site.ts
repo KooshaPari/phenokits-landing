@@ -10,7 +10,7 @@ import { SITE_CONFIG } from './constants';
  * @returns The absolute path with base URL prefix
  */
 export function sitePath(path: string): string {
-	const normalized = path.startsWith('/') ? path : `/${path}`;
+export function sitePath(path: string): string {
 	return `${SITE_CONFIG.baseUrl}${normalized}` || '/';
 }
 
