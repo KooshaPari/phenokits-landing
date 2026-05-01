@@ -1,6 +1,17 @@
-export const BASE_PATH = import.meta.env.BASE_URL.replace(/\/$/, "");
+/**
+ * Site path utilities for phenokits-landing
+ */
 
+import { SITE_CONFIG } from './constants';
+
+/**
+ * Constructs an absolute site path by prepending the base URL path.
+ * @param path - The relative path to append
+ * @returns The absolute path with base URL prefix
+ */
 export function sitePath(path: string): string {
-  const normalized = path.startsWith("/") ? path : `/${path}`;
-  return `${BASE_PATH}${normalized}` || "/";
+export function sitePath(path: string): string {
+	return `${SITE_CONFIG.baseUrl}${normalized}` || '/';
 }
+
+export type SitePathFunction = typeof sitePath;
