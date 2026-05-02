@@ -6,6 +6,7 @@
       "name": "phenokits-landing",
       "dependencies": {
         "@astrojs/check": "^0.9.4",
+        "@kilocode/landing-utils": "file:../packages/landing-utils",
         "@tailwindcss/vite": "^4.0.0",
         "astro": "^6.1.9",
         "tailwindcss": "^4.0.0",
@@ -171,6 +172,8 @@
     "@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.5.5", "", {}, "sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og=="],
 
     "@jridgewell/trace-mapping": ["@jridgewell/trace-mapping@0.3.31", "", { "dependencies": { "@jridgewell/resolve-uri": "^3.1.0", "@jridgewell/sourcemap-codec": "^1.4.14" } }, "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw=="],
+
+    "@kilocode/landing-utils": ["@kilocode/landing-utils@file:../packages/landing-utils", { "peerDependencies": { "typescript": "^5.0.0" } }],
 
     "@oslojs/encoding": ["@oslojs/encoding@1.1.0", "", {}, "sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ=="],
 

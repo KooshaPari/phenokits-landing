@@ -1,17 +1,15 @@
 /**
- * Site path utilities for phenokits-landing
+ * Site path utilities adapter for phenokits-landing
+ *
+ * Imports from shared @kilocode/landing-utils and creates a bound sitePath
+ * function using this site's configuration.
  */
 
+import { createSitePath, type SitePathFunction } from '@kilocode/landing-utils';
 import { SITE_CONFIG } from './constants';
 
-/**
- * Constructs an absolute site path by prepending the base URL path.
- * @param path - The relative path to append
- * @returns The absolute path with base URL prefix
- */
-export function sitePath(path: string): string {
-export function sitePath(path: string): string {
-	return `${SITE_CONFIG.baseUrl}${normalized}` || '/';
-}
+/** Bound sitePath function for phenokits-landing */
+export const sitePath = createSitePath(SITE_CONFIG);
 
-export type SitePathFunction = typeof sitePath;
+/** Type for the sitePath function */
+export type { SitePathFunction };

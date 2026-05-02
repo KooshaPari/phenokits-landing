@@ -3,9 +3,12 @@
  */
 
 export const SITE_CONFIG = {
+  repo: 'KooshaPari/PhenoKits',
   name: 'phenokits',
-  displayName: 'PhenoKits',
-  description: 'Production-ready solution kits and bundles',
+  slug: 'PhenoKits',
+  url: 'https://phenokits.kooshapari.com',
+  title: 'PhenoKits - Reusable Phenotype kit catalog',
+  description: 'PhenoKits collects reusable templates, libraries, governance assets, and integration kits for the Phenotype engineering system.',
   primaryColor: '#10B981',
   accentColor: '#3B82F6',
   baseUrl: import.meta.env.BASE_URL || '/',
